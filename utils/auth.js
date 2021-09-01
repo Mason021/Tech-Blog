@@ -1,4 +1,4 @@
-// verifies user loggied in before the restricted route access is given
+// verifies that the user is logged in before the restricted route access is given
 const withAuth = (req, res, next) => {
     if (!req.session.userId) {
         res.redirect("/login");
